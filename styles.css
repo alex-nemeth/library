@@ -1,0 +1,16 @@
+body {
+    background-color: rgb(13, 25, 64);
+}
+
+label {
+    color: white;
+}
+
+form {
+    display: none;
+    flex-direction: column;
+}
+
+p {
+    color: white;
+}

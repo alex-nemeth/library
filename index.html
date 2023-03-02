@@ -8,5 +8,21 @@
         <link rel="stylesheet" href="styles.css" />
         <script src="main.js" defer></script>
     </head>
-    <body></body>
+    <body>
+        <h1 class="header">Book List</h1>
+        <button class="showform">Add a new book</button>
+        <form class="newbook">
+            <label for="title">Title</label>
+            <input class="title" type="text" />
+            <label for="author">Author</label>
+            <input class="author" type="text" />
+            <label for="pages">Pages</label>
+            <input class="pages" type="text" />
+            <label for="read">Read</label>
+            <input type="checkbox" class="read" />
+            <button type="submit" class="addbook">Add book</button>
+        </form>
+
+        <div class="booklist"></div>
+    </body>
 </html>
