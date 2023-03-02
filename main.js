@@ -31,6 +31,12 @@ function render() {
     }
 }
 
+const showFormBtn = document.querySelector(".showform");
+showFormBtn.addEventListener("click", function () {
+    const form = document.querySelector(".newbook");
+    form.style.display = "flex";
+});
+
 const addBookBtn = document.querySelector(".addbook");
 addBookBtn.addEventListener("click", function (event) {
     event.preventDefault();
