@@ -40,7 +40,7 @@ form {
 }
 
 .closeform {
-    width: 50px;
+    width: 150px;
     height: 50px;
     font-weight: bold;
     background-color: rgb(216, 48, 48);
@@ -92,6 +92,18 @@ form {
     min-width: 240px;
     min-height: 200px;
     border-radius: 15px;
+}
+
+.bookbtns {
+    display: flex;
+    justify-content: right;
+
+    margin-top: 50px;
+}
+
+svg {
+    max-width: 30px;
+    margin-left: 5px;
 }
 
 .true {
