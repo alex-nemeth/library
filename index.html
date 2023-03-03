@@ -16,14 +16,25 @@
         </div>
 
         <form class="newbook">
-            <label for="title">Title</label>
-            <input class="title" type="text" />
-            <label for="author">Author</label>
-            <input class="author" type="text" />
-            <label for="pages">Pages</label>
-            <input class="pages" type="text" />
-            <label for="read">Read</label>
-            <input type="checkbox" class="read" />
+            <div class="forminput">
+                <label for="title">Title</label>
+                <input class="title" type="text" />
+            </div>
+            <div class="forminput" id="author">
+                <label for="author">Author</label>
+                <input class="author" type="text" />
+            </div>
+
+            <div class="forminput">
+                <label for="pages">Pages</label>
+                <input class="pages" type="text" />
+            </div>
+
+            <div class="forminput" id="read">
+                <label for="read">Read</label>
+                <input type="checkbox" class="read" />
+            </div>
+
             <button type="submit" class="addbook">Submit</button>
         </form>
 

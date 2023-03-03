@@ -15,6 +15,11 @@ label {
     color: white;
 }
 
+input {
+    display: block;
+    margin-bottom: 10px;
+}
+
 form {
     display: none;
     flex-direction: column;
@@ -22,12 +27,56 @@ form {
 
 .openclose {
     display: flex;
-    justify-content: space-between;
-    margin: 20px 200px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.showform {
+    width: 150px;
+    height: 50px;
+    font-weight: bold;
+    background-color: rgb(48, 152, 216);
+    border-radius: 15px;
+}
+
+.closeform {
+    width: 50px;
+    height: 50px;
+    font-weight: bold;
+    background-color: rgb(216, 48, 48);
+    border-radius: 15px;
 }
 
 .closeform {
     display: none;
+}
+
+.newbook {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 0px;
+}
+
+#read {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.read {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 30px;
+}
+
+.addbook {
+    width: 150px;
+    height: 50px;
+    font-weight: bold;
+    background-color: rgb(48, 216, 90);
+    border-radius: 15px;
 }
 
 .booklist {
@@ -40,6 +89,15 @@ form {
     color: black;
     padding: 20px;
     margin: 20px;
-    min-width: 280px;
+    min-width: 240px;
     min-height: 200px;
+    border-radius: 15px;
+}
+
+.true {
+    border-right: 20px solid rgb(48, 216, 90);
+}
+
+.false {
+    border-right: 20px solid rgb(212, 109, 54);
 }

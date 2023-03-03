@@ -33,18 +33,22 @@ function render() {
 }
 
 const showFormBtn = document.querySelector(".showform");
-showFormBtn.addEventListener("click", function () {
-    const form = document.querySelector(".newbook");
-    form.style.display = "flex";
-});
-
 const hideFormBtn = document.querySelector(".closeform");
-hideFormBtn.addEventListener("click", function () {
-    const form = document.querySelector(".newbook");
-    form.style.display = "none";
+const form = document.querySelector(".newbook");
+const addBookBtn = document.querySelector(".addbook");
+
+showFormBtn.addEventListener("click", function () {
+    form.style.display = "flex";
+    hideFormBtn.style.display = "block";
+    showFormBtn.style.display = "none";
 });
 
-const addBookBtn = document.querySelector(".addbook");
+hideFormBtn.addEventListener("click", function () {
+    form.style.display = "none";
+    hideFormBtn.style.display = "none";
+    showFormBtn.style.display = "block";
+});
+
 addBookBtn.addEventListener("click", function (event) {
     event.preventDefault();
     addBook();
