@@ -26,7 +26,8 @@ function render() {
         newCard.innerHTML = `<p>Title: ${myLibrary[i].title}</p>
         <p id="author">Author: ${myLibrary[i].author}</p>
         <p id="pages">Pages: ${myLibrary[i].pages}</p>`;
-        newCard.classList.add(myLibrary[i].read);
+        newCard.classList.add("card");
+        newCard.classList.add(`${myLibrary[i].read}`);
         bookList.appendChild(newCard);
     }
 }
@@ -35,6 +36,12 @@ const showFormBtn = document.querySelector(".showform");
 showFormBtn.addEventListener("click", function () {
     const form = document.querySelector(".newbook");
     form.style.display = "flex";
+});
+
+const hideFormBtn = document.querySelector(".closeform");
+hideFormBtn.addEventListener("click", function () {
+    const form = document.querySelector(".newbook");
+    form.style.display = "none";
 });
 
 const addBookBtn = document.querySelector(".addbook");

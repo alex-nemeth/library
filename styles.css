@@ -1,5 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;500;700&display=swap");
+
 body {
     background-color: rgb(13, 25, 64);
+    font-family: "Roboto Mono", monospace;
+}
+
+h1 {
+    font-size: 48px;
+    text-align: center;
+    color: white;
 }
 
 label {
@@ -11,6 +20,26 @@ form {
     flex-direction: column;
 }
 
-p {
-    color: white;
+.openclose {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 200px;
+}
+
+.closeform {
+    display: none;
+}
+
+.booklist {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: aliceblue;
+    color: black;
+    padding: 20px;
+    margin: 20px;
+    min-width: 280px;
+    min-height: 200px;
 }
