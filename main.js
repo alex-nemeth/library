@@ -11,8 +11,20 @@ class Book {
 
 function addBook() {
     const title = document.querySelector(".title").value;
+    if (title === "") {
+        alert("Please enter a title");
+        return;
+    }
     const author = document.querySelector(".author").value;
+    if (author === "") {
+        alert("Please enter an author");
+        return;
+    }
     const pages = document.querySelector(".pages").value;
+    if (pages === "") {
+        alert("Please enter the number of pages");
+        return;
+    }
     const read = document.querySelector(".read").checked;
     myLibrary.push(new Book(title, author, pages, read));
     render();
